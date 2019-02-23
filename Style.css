@@ -9,22 +9,26 @@
   src: url('00_Font/InputMono-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
        url('00_Font/InputMono-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
-
-body{
-	font-family: InputMono;
+body {
+  font-family: InputMono;
+  background-image: url("01_Foto/Mappa.jpg");
+  background-size: 120%
 }
 
-h1{
-	font-size: 100px;
+p{
+  font-size:200%;
 }
 
 
-.image{
-	width: 30%;
+.column {
+  float: left;
+  width: 100%;
+  padding: 20px;
 }
 
-div.scrollimage {
-  background-color: white;
-  overflow: auto;
-  white-space: nowrap;
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
