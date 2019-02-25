@@ -10,8 +10,18 @@
        url('00_Font/InputMono-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 body {
+  background-color: white;
   margin: 0pt;
   font-family: InputMono;;
+}
+
+
+div, .par{
+  margin-left: 0.5%;
+}
+
+h3, .number{
+  margin-left: 40px;
 }
 
 p{
@@ -23,7 +33,7 @@ p{
 }
 
 div.scrollimage {
-  background-color: white;
+  background-color: none;
   overflow: auto;
   white-space: nowrap;
 }
@@ -42,6 +52,7 @@ div.scrollimage a:hover {
 
 .image{
   width: 30%;
+  border-radius: 15px;
   cursor:pointer;
 }
 
