@@ -21,28 +21,47 @@ body {
   margin: -0.5%;
 }
 
+.Salutida_smart{
+  width: 0%
+}
+
+.testo{
+  width: 100%;
+  padding-top:-20px;
+  border: none;
+  margin: -0.5%;
+}
+
 .mappa{
   width: 100%;
 }
 
+.title{
+  font-size: 50px;
+  padding-top: 50px;
+  margin-left: 40px;
+}
+
+.list{
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
 
 .all_box{
   margin-left: 0.5%;
+  margin-top: 70px;
 }
 
 .hor_box{
   margin-top: 5%;
-  font-size: 150%;
 }
 
-h3, .indice_cartoline{
+.indice_cartoline{
   margin-left: 40px;
-  line-height: 130%
+  line-height: 130%;
+  font-size: 30px;
 }
 
-p{
-  font-size:200%;
-}
 
 .scrollimage {
   background-color: none;
@@ -157,4 +176,65 @@ filter:alpha(opacity=60);
 @keyframes zoom {
     from {transform:scale(0)} 
     to {transform:scale(1)}
+}
+
+
+@media only screen and (max-width:500px){
+
+  body{
+    width: window.innerWidth; 
+  }
+
+  .Salutida{
+    display: none;
+  }
+
+  .Salutida_smart{
+    width: 102%;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+
+  .mappa{
+    display:none;
+  }
+
+
+  .indice_cartoline{
+    margin-left: 20px;
+    line-height: 130%;
+    font-size: 20px;
+   }
+
+  .modal-content{
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 900px;
+  }
+  .modal {
+    padding-top:45%;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .title{
+  font-size: 50px;
+  padding-top: 50px;
+  margin-left: 20px;
+}
+
+.list{
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+}
+
+.image{
+  width: 40%;
+  border-radius: 15px;
+  cursor:pointer;
 }
