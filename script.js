@@ -10,3 +10,4 @@ function onClick(element) {
 	captionText.innerHTML = element.alt;
 }
 
+$(".remove-me").remove();
